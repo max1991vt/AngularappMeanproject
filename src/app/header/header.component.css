@@ -1,0 +1,33 @@
+header{
+    color: black;
+    border: 1px solid black;
+    padding: 20px 0 0 0;
+    background: black;
+}
+.header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li{
+ display: inline-block;
+ padding: 20px 15px;
+}
+.header ul li a{
+    color: white;
+    font-weight: bold;
+}
+.header ul li a:hover{
+    color: #02CECD;
+    font-weight: italic;
+}
+
+.header ul li a:active{
+    text-decoration:  underline;
+}
+.header img{
+height: 100px;
+padding-left: 20px;
+border-radius: 30%;
+}

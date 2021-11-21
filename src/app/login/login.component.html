@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="main">
+        <h1>Đăng nhập</h1>
+        <!-- Kiểm tra dữ liệu bên ngoài -->
+        <form #formLogin="ngForm" (ngSubmit)="login(formLogin.value)">
+            <div class="form-group">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" #username="ngModel" required class="form-control" placeholder="Nhập tên đăng nhập" id="username" name="username" [ngModel] >
+                <span class="error" *ngIf = "username.invalid && (username.dirty || username.touched)">Tên đang nhập không hợp lệ</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" #password="ngModel" required class="form-control" placeholder="Nhập mật khẩu" id="password" name="password" [ngModel]>
+                <span class="error" *ngIf = "password.invalid && (password.dirty || password.touched)">Mật khẩu không hợp lệ</span>
+            </div> 
+            <button type="submit" [disabled]="formLogin.invalid" class="btn btn-primary">Đăng nhập</button>
+          </form>  
+
+          
+    </div>
+</div>

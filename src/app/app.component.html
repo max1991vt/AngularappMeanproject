@@ -1,0 +1,27 @@
+<app-header [parentstochilds] = "parentstochilds"></app-header>
+<!-- <p>
+  <ngb-alert [dismissible] = "false">
+  <strong>Warning!</strong> BEtter check yourself</ngb-alert>
+</p>
+<i class="fa fa-500px"></i> -->
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- sidebar -->
+        <app-sidebar></app-sidebar>
+        <!-- /sidebar -->
+      </div>
+      <div class="col-md-9 main">
+        <!-- main -->
+        <router-outlet></router-outlet>
+        <!-- /main -->
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+<app-footer (childstoparents) = "childstoparents($event)"></app-footer> 
+<!-- <app-chat></app-chat> -->

@@ -1,0 +1,30 @@
+*{
+
+  font-family: "Poppins", sans-serif;
+}
+main{
+    margin: 10px 0;
+}
+/* main .main{ */
+    /*text-align: center;
+    text-transform: uppercase;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;*/
+/* } */
+main .main .product .price{
+    font-size:13px;
+}
+pagination-controls{
+    display: inline-block;
+    width: 100%;
+    text-align:left;
+    font-size:13px;
+    margin-top:30px;
+}
+
+.error{
+    font-size: 13px;
+    color: red;
+    font-style: italic;
+}

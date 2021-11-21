@@ -1,0 +1,15 @@
+<header>
+    <div class="container text-center">
+        <div class="header">
+            <img src="../../assets/img/idesign_logo_by_truthgfx_d21lxha-fullview.jpg" alt="logo">
+            <ul>
+                <li><a routerLink="/">TRANG CHỦ</a></li>
+                <li><a routerLink="/lien-he">LIÊN HỆ</a></li>
+                <li><a routerLink="/dang-ky">ĐĂNG KÝ</a></li>
+                <li><a routerLink="/dang-nhap">ĐĂNG NHẬP</a></li>
+                <li *ngIf="confirm_login != null" (click)="getInfoUser()"><a routerLink="/thong-tin-thanh-vien">Thông tin thành viên</a></li>
+                <li *ngIf="confirm_login != null" (click)="logout()"><a>Thoát</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

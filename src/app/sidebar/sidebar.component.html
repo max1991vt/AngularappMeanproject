@@ -1,0 +1,17 @@
+
+<h4>Danh mục bài viết</h4>
+<ul class="nav nav-pills flex-column">
+    <li class="nav-item" *ngFor="let i of list">
+      <a class="nav-link" routerLink="/danh-muc-bai-viet/{{ i.slug }}">
+        {{ i.name }}</a>
+    
+      <ul class="sub-menu">
+        <li class="nav-item" *ngFor="let j of i.childs">
+          <a routerLink="/danh-muc-bai-viet/{{ j.slug }}">
+            {{ j.name }}</a>
+        </li>
+      </ul>
+
+    </li>
+   
+  </ul>

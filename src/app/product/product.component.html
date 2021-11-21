@@ -1,0 +1,9 @@
+
+<div class="container">
+    <div class="main" (click)="onClickProduct()">
+        <img src="../../assets/img/{{data?.data[0]?.slug}}.jpeg">
+        <h1>{{data?.data[0]?.name}}</h1>
+        <p [innerHTML]=data?.data[0]?.content></p>
+        <p>tag: {{name}}</p>
+    </div>
+</div>
